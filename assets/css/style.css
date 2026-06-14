@@ -9,6 +9,11 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
+html,
+body {
+    overflow-x: hidden;
+}
+
 /*Nav bar*/
 .nav-link.active {
     color: #f4d548;
