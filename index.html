@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html class="dark" lang="en" style="">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Cayo | Portfolio
+  </title>
+  <link href="assets/img/titleimg.jpg" rel="icon">
+  
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries">
+  </script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+  <link href="assets/css/style.css" rel="stylesheet"/>
+  <script id="tailwind-config">
+   tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-highest": "#353436",
+                    "on-error": "#690005",
+                    "on-error-container": "#ffdad6",
+                    "on-surface": "#e5e2e3",
+                    "tertiary-fixed-dim": "#4edea3",
+                    "inverse-on-surface": "#313031",
+                    "on-primary": "#3a3000",
+                    "outline": "#999077",
+                    "border-subtle": "rgba(255, 255, 255, 0.08)",
+                    "on-tertiary": "#003824",
+                    "on-surface-variant": "#d0c6ab",
+                    "on-primary-fixed-variant": "#544600",
+                    "on-secondary-fixed": "#001f24",
+                    "surface-elevated": "#1A1A1B",
+                    "primary": "#fff6df",
+                    "secondary": "#bdf4ff",
+                    "surface-container-low": "#1c1b1c",
+                    "inverse-surface": "#e5e2e3",
+                    "surface-bright": "#39393a",
+                    "on-secondary-container": "#00616d",
+                    "glass-bg": "rgba(15, 15, 16, 0.7)",
+                    "secondary-container": "#00e3fd",
+                    "tertiary-fixed": "#6ffbbe",
+                    "surface-tint": "#e9c400",
+                    "surface-dim": "#131314",
+                    "primary-container": "#ffd700",
+                    "inverse-primary": "#705d00",
+                    "on-tertiary-fixed": "#002113",
+                    "surface": "#131314",
+                    "surface-container-high": "#2a2a2b",
+                    "error-container": "#93000a",
+                    "on-tertiary-container": "#006d4a",
+                    "surface-variant": "#353436",
+                    "primary-fixed-dim": "#e9c400",
+                    "tertiary": "#d8ffe7",
+                    "on-tertiary-fixed-variant": "#005236",
+                    "background": "#131314",
+                    "primary-fixed": "#ffe16d",
+                    "secondary-fixed-dim": "#00daf3",
+                    "surface-container-lowest": "#0e0e0f",
+                    "on-background": "#e5e2e3",
+                    "surface-container": "#201f20",
+                    "secondary-fixed": "#9cf0ff",
+                    "text-muted": "#888888",
+                    "on-primary-container": "#705e00",
+                    "on-primary-fixed": "#221b00",
+                    "error": "#ffb4ab",
+                    "outline-variant": "#4d4732",
+                    "on-secondary": "#00363d",
+                    "tertiary-container": "#65f2b5",
+                    "on-secondary-fixed-variant": "#004f58"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "container-padding": "32px",
+                    "section-gap-desktop": "160px",
+                    "section-gap-mobile": "80px",
+                    "grid-gutter": "24px",
+                    "card-padding": "24px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Open Sans", "sans-serif"],
+                    "body-md": ["Open Sans", "sans-serif"],
+                    "headline-md": ["Raleway", "sans-serif"],
+                    "headline-lg": ["Raleway", "sans-serif"],
+                    "display-hero": ["Raleway", "sans-serif"],
+                    "display-hero-mobile": ["Raleway", "sans-serif"],
+                    "label-code": ["Poppins", "sans-serif"],
+                    "label-caps": ["Poppins", "sans-serif"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "label-code": ["14px", {"lineHeight": "1.5", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "display-hero": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "700"}],
+                    "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                    "display-hero-mobile": ["42px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+  </script>
+ </head>
+
+ <body class="font-body-md text-body-md overflow-x-hidden selection:bg-primary-container selection:text-on-primary-container">
+  
+<!-- Top Navigation Bar -->
+  <nav class="fixed top-0 w-full z-50 bg-glass-bg backdrop-blur-xl border-b border-border-subtle h-20">
+   <div class="flex justify-between items-center max-w-[1280px] mx-auto px-container-padding h-full">
+    <span class="font-headline-md text-headline-md font-bold text-primary">
+     Cayo.
+    </span>
+    <div class="hidden md:flex items-center gap-10">
+     <a class="nav-link text-on-surface-variant hover:text-on-surface transition-colors duration-300 font-body-md text-body-md pb-1" href="#home">
+      Home
+     </a>
+     <a class="nav-link text-on-surface-variant hover:text-on-surface transition-colors duration-300 font-body-md text-body-md pb-1" href="#about">
+      About
+     </a>
+     <a class="nav-link text-on-surface-variant hover:text-on-surface transition-colors duration-300 font-body-md text-body-md pb-1" href="#projects">
+      Projects
+     </a>
+     <a class="nav-link text-on-surface-variant hover:text-on-surface transition-colors duration-300 font-body-md text-body-md pb-1" href="#write">
+      Write
+     </a>
+    </div>
+    <div class="flex items-center gap-4">
+      <a id="connect-btn" href="#contact"
+          class="bg-primary-container text-on-primary-container px-8 py-2.5 rounded transition-all duration-300">
+          <span id="connect-text">Connect</span>
+      </a>
+      <!-- Hamburger -->
+      <button
+          id="menu-toggle"
+          class="md:hidden text-on-background"
+          aria-label="Toggle menu">
+
+          <span class="material-symbols-outlined text-3xl">
+              menu
+          </span>
+      </button>
+    </div>
+   </div>
+  </nav>
+  <div
+    id="mobile-menu"
+    class="hidden md:hidden fixed top-20 left-0 w-full bg-surface-elevated border-b border-border-subtle z-40">
+    <div class="flex flex-col px-container-padding py-6 gap-6">
+        <a href="#home" class="font-body-md">Home</a>
+        <a href="#about" class="font-body-md">About</a>
+        <a href="#projects" class="font-body-md">Projects</a>
+        <a href="#write" class="font-body-md">Write</a>
+        <a href="#contact" class="font-body-md">Contact</a>
+    </div>
+  </div>
+
+
+<!-- Hero Section -->
+  <header class="relative h-screen flex items-center justify-center overflow-hidden" id="home">
+   <div class="absolute inset-0 z-0">
+    <img alt="" class="w-full h-full object-cover opacity-40 brightness-50" src="assets/img/hero-bg.jpg"/>
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-background/50 to-background">
+    </div>
+   </div>
+   <div class="relative z-10 text-center px-container-padding animate-fade-in-up">
+    <p class="font-label-code text-label-code text-primary-container mb-4 uppercase tracking-[0.2em]">
+     // HI! I'M
+    </p>
+    <h1 class="font-display-hero text-display-hero md:text-display-hero mb-6 text-on-background">
+     Cahyo
+     <span class="text-primary-container">
+      Prasetyo
+     </span>
+    </h1>
+    <div class="flex flex-wrap justify-center gap-6">
+     <a class="group flex items-center gap-3 bg-surface-elevated border border-border-subtle px-6 py-3 rounded hover:border-primary-container transition-all duration-300" target="_blank" href="https://linkedin.com/in/cayopy">
+      <span class="material-symbols-outlined text-primary-container">
+       link
+      </span>
+      <span class="font-body-md">
+       LinkedIn
+      </span>
+     </a>
+     <a class="group flex items-center gap-3 bg-surface-elevated border border-border-subtle px-6 py-3 rounded hover:border-primary-container transition-all duration-300" target="_blank" href="https://instagram.com/cayopr._/">
+      <span class="material-symbols-outlined text-primary-container">
+       photo_camera
+      </span>
+      <span class="font-body-md">
+       Instagram
+      </span>
+     </a>
+     <a class="group flex items-center gap-3 bg-surface-elevated border border-border-subtle px-6 py-3 rounded hover:border-primary-container transition-all duration-300" target="_blank" href="https://github.com/cayo-py">
+      <span class="material-symbols-outlined text-primary-container">
+       terminal
+      </span>
+      <span class="font-body-md">
+       GitHub
+      </span>
+     </a>
+    </div>
+   </div>
+   <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+    <span class="material-symbols-outlined text-on-surface-variant">
+     keyboard_double_arrow_down
+    </span>
+   </div>
+  </header>
+  
+  
+<!-- About Section -->
+  <section class="max-w-[1200px] mx-auto px-container-padding py-20" id="about">
+   <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start reveal active">
+    <div class="relative group max-w-[85%] mx-auto lg:mx-0">
+     <div class="absolute -inset-4 border-2 border-primary-container/20 rounded group-hover:border-primary-container/50 transition-all duration-500">
+     </div>
+     <img alt="" class="relative z-10 w-full aspect-square object-cover rounded filter grayscale contrast-125 hover:grayscale-0 transition-all duration-700" src="assets/img/about.jpg"/>
+     <div class="absolute -bottom-4 -right-4 bg-primary-container p-6 z-20 hidden md:block">
+      <p class="font-headline-md text-headline-md text-on-primary-container">
+       UB '23
+      </p>
+     </div>
+    </div>
+    <div class="flex flex-col gap-6">
+     <div>
+      <p class="font-label-code text-label-code text-primary-container mb-2">
+       // ABOUT ME
+      </p>
+      <h2 class="font-headline-lg text-headline-lg text-on-background leading-tight">
+       "I build to learn, and learn by building."
+      </h2>
+     </div>
+     <div class="flex flex-col gap-4 text-on-surface-variant font-body-lg text-body-lg">
+      <p class="">
+       Hai! Perkenalkan: Cayo. Mahasiswa Teknik Komputer Universitas Brawijaya. 
+       Fokus keminatan di bidang <b><i>Embedded System</i>, <i>Internet of Things</i>, dan <i>Edge Computing</i>.</b>
+      </p>
+      <p class="">
+        <span class="opacity-15"><i>Lihat fotoku, keren kan :D</i></span>
+      </p>
+     </div>
+     <div class="bg-surface-elevated border border-border-subtle p-6 rounded-xl relative overflow-hidden group">
+      <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-30 transition-opacity">
+       <span class="material-symbols-outlined text-[48px]">
+        memory
+       </span>
+      </div>
+      <p class="font-label-code text-label-code text-primary-container mb-1">
+       CURRENT ROLE
+      </p>
+      <h3 class="font-headline-md text-headline-md text-on-background mb-2 text-xl">
+       RES Lab Assistant
+      </h3>
+      <p class="font-body-md text-on-surface-variant mb-4">
+       Saat ini merupakan asisten Laboratorium RES Filkom UB. Berperan sebagai asisten praktikum, mendukung kegiatan riset, serta membantu pelaksanaan workshop dan proyek praktis di bidang robotika dan sistem tertanam.
+      </p>
+      <div class="flex flex-wrap gap-2">
+       <span class="font-label-code text-[11px] bg-background border border-border-subtle px-3 py-1 rounded text-on-surface-variant">
+        IoT
+       </span>
+       <span class="font-label-code text-[11px] bg-background border border-border-subtle px-3 py-1 rounded text-on-surface-variant">
+        Embedded System
+       </span>
+       <span class="font-label-code text-[11px] bg-background border border-border-subtle px-3 py-1 rounded text-on-surface-variant">
+        MQTT
+       </span>
+       <span class="font-label-code text-[11px] bg-background border border-border-subtle px-3 py-1 rounded text-on-surface-variant">
+        Arduino
+       </span>
+       <span class="font-label-code text-[11px] bg-background border border-border-subtle px-3 py-1 rounded text-on-surface-variant">
+        PCB Design
+       </span>
+      </div>
+     </div>
+    </div>
+   </div>
+
+   <!-- Core Competencies -->
+   <div class="mt-20 reveal active">
+    <div class="text-center mb-12">
+     <p class="font-label-code text-label-code text-primary-container mb-2">
+      // MY SKILLS
+     </p>
+     <h2 class="font-headline-lg text-headline-lg text-on-background">
+      Core Competencies
+     </h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-grid-gutter">
+
+     <div class="bg-surface-elevated border border-border-subtle p-card-padding rounded hover:border-primary-container transition-all">
+      <h4 class="font-label-caps text-label-caps text-primary-container mb-6 flex items-center gap-2">
+       <span class="material-symbols-outlined text-lg">
+        code
+       </span>
+       IoT &amp; Monitoring
+      </h4>
+      <ul class="space-y-4 font-body-md text-on-surface-variant">
+        <li class="flex items-center gap-3">
+         <div class="w-1.5 h-1.5 bg-primary-container rounded-full">
+         </div>
+         MQTT
+        </li>
+       <li class="flex items-center gap-3">
+        <div class="w-1.5 h-1.5 bg-primary-container rounded-full">
+        </div>
+        Grafana
+       </li>
+       <li class="flex items-center gap-3">
+        <div class="w-1.5 h-1.5 bg-primary-container rounded-full">
+        </div>
+        InfluxDB
+       </li>
+       <li class="flex items-center gap-3">
+         <div class="w-1.5 h-1.5 bg-primary-container rounded-full">
+         </div>
+         Node-RED
+       </li>
+      </ul>
+     </div>
+
+     <div class="bg-surface-elevated border border-border-subtle p-card-padding rounded hover:border-primary-container transition-all">
+      <h4 class="font-label-caps text-label-caps text-primary-container mb-6 flex items-center gap-2">
+       <span class="material-symbols-outlined text-lg">
+        developer_board
+       </span>
+       Embedded Systems
+      </h4>
+      <ul class="space-y-4 font-body-md text-on-surface-variant">
+       <li class="flex items-center gap-3">
+        <div class="w-1.5 h-1.5 bg-primary-container rounded-full">
+        </div>
+        Arduino
+       </li>
+       <li class="flex items-center gap-3">
+        <div class="w-1.5 h-1.5 bg-primary-container rounded-full">
+        </div>
+        ESP32
+       </li>
+       <li class="flex items-center gap-3">
+        <div class="w-1.5 h-1.5 bg-primary-container rounded-full">
+        </div>
+        AVR
+       </li>
+       <li class="flex items-center gap-3">
+        <div class="w-1.5 h-1.5 bg-primary-container rounded-full">
+        </div>
+        PCB Design
+       </li>
+      </ul>
+     </div>
+
+     <div class="bg-surface-elevated border border-border-subtle p-card-padding rounded hover:border-primary-container transition-all">
+      <h4 class="font-label-caps text-label-caps text-primary-container mb-6 flex items-center gap-2">
+       <span class="material-symbols-outlined text-lg">
+        database
+       </span>
+       Infrastructure
+      </h4>
+      <ul class="space-y-4 font-body-md text-on-surface-variant">
+       <li class="flex items-center gap-3">
+        <div class="w-1.5 h-1.5 bg-primary-container rounded-full">
+        </div>
+        Docker
+       </li>
+       <li class="flex items-center gap-3">
+        <div class="w-1.5 h-1.5 bg-primary-container rounded-full">
+        </div>
+        NGINX
+       </li>
+       <li class="flex items-center gap-3">
+        <div class="w-1.5 h-1.5 bg-primary-container rounded-full">
+        </div>
+        Basic Networking
+       </li>
+      </ul>
+     </div>
+
+     <div class="bg-surface-elevated border border-border-subtle p-card-padding rounded hover:border-primary-container transition-all">
+      <h4 class="font-label-caps text-label-caps text-primary-container mb-6 flex items-center gap-2">
+       <span class="material-symbols-outlined text-lg">
+        construction
+       </span>
+       Software &amp; Tools
+      </h4>
+      <ul class="space-y-4 font-body-md text-on-surface-variant">
+       <li class="flex items-center gap-3">
+        <div class="w-1.5 h-1.5 bg-primary-container rounded-full">
+        </div>
+        C / C++
+       </li>
+       <li class="flex items-center gap-3">
+        <div class="w-1.5 h-1.5 bg-primary-container rounded-full">
+        </div>
+        Python
+       </li>
+       <li class="flex items-center gap-3">
+        <div class="w-1.5 h-1.5 bg-primary-container rounded-full">
+        </div>
+        Linux
+      </li>
+      <li class="flex items-center gap-3">
+       <div class="w-1.5 h-1.5 bg-primary-container rounded-full">
+       </div>
+       MATLAB
+      </li>
+       <li class="flex items-center gap-3">
+        <div class="w-1.5 h-1.5 bg-primary-container rounded-full">
+        </div>
+        Git
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+  </section>
+  
+<!-- Projects Section -->
+  <section class="py-section-gap-desktop bg-surface-container-lowest" id="projects">
+   <div class="max-w-[1280px] mx-auto px-container-padding reveal active">
+    <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+     <div>
+      <p class="font-label-code text-label-code text-primary-container mb-2">
+       // SELECTED WORKS
+      </p>
+      <h2 class="font-headline-lg text-headline-lg text-on-background">
+       Innovation &amp; Implementation
+      </h2>
+     </div>
+    </div>
+    <div class="flex overflow-x-auto gap-6 pb-8 scroll-smooth snap-x snap-mandatory no-scrollbar">
+     <!-- Card 1: Flood Early Warning System -->
+     <div class="group cursor-pointer bg-surface border border-border-subtle rounded-xl overflow-hidden hover:border-primary-container transition-all duration-500 w-[280px] flex-shrink-0 snap-start" onclick="openModal('modal-iot')">
+      <div class="relative overflow-hidden aspect-[16/10]">
+       <img alt="Flood Warning" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://github.com/fanTaux/FloodEarlyWarningSystemProject/blob/7a1f3aef27163857cf8e27b2f33572f83b86d7f0/assets/AlatEWS.jpg?raw=true"/>
+       <div class="absolute top-4 right-4 bg-primary-container text-on-primary-container px-3 py-1 font-label-caps text-[10px] rounded">
+        IoT
+       </div>
+      </div>
+      <div class="p-6">
+       <p class="font-label-code text-label-code text-primary-container mb-2">
+        Monitoring / Visualization
+       </p>
+       <h3 class="font-headline-md text-headline-md text-on-background mb-3 group-hover:text-primary-container transition-colors text-lg">
+        Flood Early Warning
+       </h3>
+       <p class="text-on-surface-variant line-clamp-2 text-body-md">
+        Real-time water level monitoring and visualization system.
+       </p>
+      </div>
+     </div>
+     <!-- Card 2: Smart Helmet Crash Detection System -->
+    <div class="group cursor-pointer bg-surface border border-border-subtle rounded-xl overflow-hidden hover:border-primary-container transition-all duration-500 w-[280px] flex-shrink-0 snap-start" onclick="openModal('modal-helmet')">
+     <div class="relative overflow-hidden aspect-[16/10]">
+      <img alt="Crash Detection" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://github.com/cayo-py/Helmet-with-Crash-Detecting/blob/main/assets/skematik.png?raw=true"/>
+      <div class="absolute top-4 right-4 bg-primary-container text-on-primary-container px-3 py-1 font-label-caps text-[10px] rounded">
+       Sensors
+      </div>
+     </div>
+     <div class="p-6">
+      <p class="font-label-code text-label-code text-primary-container mb-2">
+       Embedded System
+      </p>
+      <h3 class="font-headline-md text-headline-md text-on-background mb-3 group-hover:text-primary-container transition-colors text-lg">
+       Smart Helmet Crash Detection System
+      </h3>
+      <p class="text-on-surface-variant line-clamp-2 text-body-md">
+       Detection system for motorcycle accidents using sensors and GPS.
+      </p>
+     </div>
+    </div>
+     <!-- Card 3: Automatic Feeder -->
+     <div class="group cursor-pointer bg-surface border border-border-subtle rounded-xl overflow-hidden hover:border-primary-container transition-all duration-500 w-[280px] flex-shrink-0 snap-start" onclick="openModal('modal-feeder')">
+      <div class="relative overflow-hidden aspect-[16/10]">
+       <img alt="Automatic Feeder" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://github.com/cayo-py/automatic-feeder/blob/main/assets/feedfeeder2.jpeg?raw=true"/>
+       <div class="absolute top-4 right-4 bg-primary-container text-on-primary-container px-3 py-1 font-label-caps text-[10px] rounded">
+        Automation
+       </div>
+      </div>
+      <div class="p-6">
+       <p class="font-label-code text-label-code text-primary-container mb-2">
+         Automation / Scheduling
+       </p>
+       <h3 class="font-headline-md text-headline-md text-on-background mb-3 group-hover:text-primary-container transition-colors text-lg">
+        Automatic Fish Feeder
+       </h3>
+       <p class="text-on-surface-variant line-clamp-2 text-body-md">
+        Automated fish feeding system with remote scheduling.
+       </p>
+      </div>
+    </div>
+     <!-- Card 4: Majadigi Superapp (Capstone Project) -->
+     <div class="group cursor-pointer bg-surface border border-border-subtle rounded-xl overflow-hidden hover:border-primary-container transition-all duration-500 w-[280px] flex-shrink-0 snap-start" onclick="openModal('modal-capstone')">
+      <div class="relative overflow-hidden aspect-[16/10]">
+       <img alt="Majadigi Superapp" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://api.minio.jatimprov.go.id/kominfo--majadigi/hotlink-ok/site-setting/about/d55a272256_LOGO_MAJADIGI.png?w=210&format=webp"/>
+       <div class="absolute top-4 right-4 bg-primary-container text-on-primary-container px-3 py-1 font-label-caps text-[10px] rounded">
+        Infrastructure
+       </div>
+      </div>
+      <div class="p-6">
+       <p class="font-label-code text-label-code text-primary-container mb-2">
+        DevOps / Containerization
+       </p>
+       <h3 class="font-headline-md text-headline-md text-on-background mb-3 group-hover:text-primary-container transition-colors text-lg">
+        Majadigi Superapp (Capstone Project)
+       </h3>
+       <p class="text-on-surface-variant line-clamp-2 text-body-md">
+        A real-world case study to develop the Majadigi Superapp in collaboration with KOMDIGI.
+       </p>
+      </div>
+     </div>
+
+    </div>
+   </div>
+  </section>
+  
+<!-- Modal Project Detail -->
+  <div class="fixed inset-0 z-[100] hidden" id="project-modal">
+   <div class="absolute inset-0 bg-background/90 backdrop-blur-md" onclick="closeModal()">
+   </div>
+   <div class="relative z-10 flex items-center justify-center min-h-screen p-container-padding">
+    <div class="bg-surface-elevated border border-primary-container/30 w-full max-w-4xl max-h-[90vh] overflow-y-auto rounded shadow-2xl relative">
+     <button class="absolute top-6 right-6 text-on-surface hover:text-primary-container font-label-code z-20 transition-colors" onclick="closeModal()">
+      <span class="material-symbols-outlined text-3xl">
+       close
+      </span>
+     </button>
+     <div class="flex flex-col">
+      <img alt="" class="w-full h-80 object-cover border-b border-border-subtle" id="modal-img" src=""/>
+      <div class="p-8 md:p-12">
+       <p class="font-label-code text-label-code text-primary-container mb-4 uppercase tracking-widest" id="modal-tag">
+       </p>
+       <h3 class="font-headline-lg text-headline-lg text-on-background mb-8" id="modal-title">
+       </h3>
+       <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div class="md:col-span-2 space-y-6">
+         <h4 class="font-label-caps text-label-caps text-primary-container border-b border-primary-container/20 pb-2">
+          PROJECT OVERVIEW
+         </h4>
+         <p class="text-on-surface-variant font-body-lg text-body-lg leading-relaxed" id="modal-desc">
+         </p>
+        </div>
+        <div class="space-y-8">
+         <div>
+          <h4 class="font-label-caps text-label-caps text-primary-container border-b border-primary-container/20 pb-2 mb-4">
+           TECHNOLOGIES
+          </h4>
+          <div class="flex flex-wrap gap-2" id="modal-stack">
+          </div>
+         </div>
+         <div class="pt-6">
+          <a class="inline-flex items-center justify-center gap-3 bg-primary-container text-on-primary-container px-8 py-3 rounded font-bold hover:scale-105 active:scale-95 transition-all w-full" href="#" id="modal-repo" target="_blank">
+           VIEW REPOSITORY
+           <span class="material-symbols-outlined text-xl">
+            north_east
+           </span>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  
+<!-- Latest Writing Section -->
+  <section class="py-section-gap-desktop bg-background relative overflow-hidden" id="write">
+   <div class="max-w-[1280px] mx-auto px-container-padding reveal active">
+    <div class="text-center mb-16">
+     <p class="font-label-code text-label-code text-primary-container mb-2">
+      // LATEST WRITING
+     </p>
+     <h2 class="font-headline-lg text-headline-lg text-on-background">
+      Saya punya Medium.
+     </h2>
+    </div>
+    <div class="max-w-3xl mx-auto">
+     <div class="group bg-surface-elevated border border-border-subtle p-12 rounded-xl flex flex-col md:flex-row items-center gap-12 transition-all hover:border-primary-container relative overflow-hidden">
+      <div class="absolute -right-20 -bottom-20 opacity-5 group-hover:opacity-10 transition-opacity">
+       <span class="material-symbols-outlined text-[300px]">
+        edit_note
+       </span>
+      </div>
+      <div class="w-32 h-32 flex-shrink-0 bg-primary-container rounded-full flex items-center justify-center">
+       <span class="material-symbols-outlined text-on-primary-container text-[56px]" style='font-variation-settings: "FILL" 1;'>
+        history_edu
+       </span>
+      </div>
+      <div class="flex-grow text-center md:text-left">
+       <h3 class="font-headline-md text-headline-md text-on-background mb-4">
+        Ada rencana <i>nulis</i>, tapi entah kapan.
+       </h3>
+       <p class="text-on-surface-variant font-body-lg text-body-lg mb-8">
+        Silakan kunjungi Profile Medium saya jika tertarik membaca tulisan <i>ngawur</i> yang direncanakan.
+       </p>
+       <a class="inline-block bg-primary-container text-on-primary-container px-10 py-4 font-bold rounded hover:scale-105 active:scale-95 transition-all duration-300" href="https://medium.com/@otsyac" target="_blank">
+        VISIT MEDIUM
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  
+<!-- Contact Section -->
+  <section class="py-section-gap-desktop bg-surface-dim" id="contact">
+   <div class="max-w-[1280px] mx-auto px-container-padding reveal active">
+    <div class="text-center mb-20">
+     <p class="font-label-code text-label-code text-primary-container mb-2">
+      // GET IN TOUCH
+     </p>
+     <h2 class="font-display-hero-mobile text-display-hero-mobile md:text-display-hero text-on-background">
+      Let's Connect
+     </h2>
+     <p class="mt-6 text-on-surface-variant max-w-xl mx-auto">
+      Ada proyek yang ingin didiskusikan atau sekadar ingin ngobrol tentang apa pun itu? Langsung lesgo in aja, kuy!
+     </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-grid-gutter">
+     <a class="group bg-surface-elevated border border-border-subtle p-10 rounded-xl flex flex-col items-center gap-6 hover:border-primary-container transition-all" target="_blank" href="https://linkedin.com/in/cayopy">
+      <div class="w-16 h-16 rounded bg-background flex items-center justify-center group-hover:bg-primary-container transition-colors">
+       <span class="material-symbols-outlined text-primary-container group-hover:text-on-primary-container text-4xl">
+        link
+       </span>
+      </div>
+      <span class="font-headline-md text-headline-md text-on-background">
+       LinkedIn
+      </span>
+     </a>
+     <a class="group bg-surface-elevated border border-border-subtle p-10 rounded-xl flex flex-col items-center gap-6 hover:border-primary-container transition-all" target="_blank" href="https://instagram.com/cayopy">
+      <div class="w-16 h-16 rounded bg-background flex items-center justify-center group-hover:bg-primary-container transition-colors">
+       <span class="material-symbols-outlined text-primary-container group-hover:text-on-primary-container text-4xl">
+        photo_camera
+       </span>
+      </div>
+      <span class="font-headline-md text-headline-md text-on-background">
+       Instagram
+      </span>
+     </a>
+     <a class="group bg-surface-elevated border border-border-subtle p-10 rounded-xl flex flex-col items-center gap-6 hover:border-primary-container transition-all" target="_blank" href="https://x.com/adaprasnya">
+      <div class="w-16 h-16 rounded bg-background flex items-center justify-center group-hover:bg-primary-container transition-colors">
+       <span class="material-symbols-outlined text-primary-container group-hover:text-on-primary-container text-4xl">
+        alternate_email
+       </span>
+      </div>
+      <span class="font-headline-md text-headline-md text-on-background">
+       Twitter
+      </span>
+     </a>
+     <a class="group bg-surface-elevated border border-border-subtle p-10 rounded-xl flex flex-col items-center gap-6 hover:border-primary-container transition-all" target="_blank" href="mailto:mwcahyo.pr@gmail.com">
+      <div class="w-16 h-16 rounded bg-background flex items-center justify-center group-hover:bg-primary-container transition-colors">
+       <span class="material-symbols-outlined text-primary-container group-hover:text-on-primary-container text-4xl">
+        mail
+       </span>
+      </div>
+      <span class="font-headline-md text-headline-md text-on-background">
+       Email
+      </span>
+     </a>
+    </div>
+   </div>
+  </section>
+  
+<!-- Footer -->
+  <footer class="bg-surface-container-lowest border-t border-border-subtle py-12">
+   <div class="flex flex-col md:flex-row justify-between items-center max-w-[1280px] mx-auto px-container-padding gap-8">
+    <div class="flex flex-col items-center md:items-start gap-4">
+     <span class="font-label-caps text-label-caps text-primary">
+      Cayo.
+     </span>
+     <p class="font-body-md text-body-md text-text-muted text-center md:text-left">
+      © 2026 Cayo Portfolio. Built with precision for the future.
+     </p>
+    </div>
+   </div>
+  </footer>
+  <script src="assets/js/script.js">
+  </script>
+ </body>
+</html>
